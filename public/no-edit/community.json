@@ -1,0 +1,68 @@
+[
+  {
+    "noticeTitle":"컨텐츠 커뮤니티",
+    "noticeDate":"2022.06.23",
+    "noticeDetailItems":[
+      {
+        "content":"약 수령 후 수령확인을 눌러주세요.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약제비 90,000원이 결제되었습니다.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약이 도착하면 복약지도에 맞춰 복용해 주세요.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약제비 90,000원이 청구되었습니다. 5분 후 자동으로 약제비가 결제될 예정입니다.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      }
+    ]
+  },
+  {
+    "noticeTitle":"일상 커뮤니티",
+    "noticeDate":"2022.06.23",
+    "noticeDetailItems":[
+      {
+        "content":"약 수령 후 수령확인을 눌러주세요.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약제비 90,000원이 결제되었습니다.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약이 도착하면 복약지도에 맞춰 복용해 주세요.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약제비 90,000원이 청구되었습니다. 5분 후 자동으로 약제비가 결제될 예정입니다.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      }
+    ]
+  },
+  {
+    "noticeTitle":"건강식품 커뮤니티",
+    "noticeDate":"2022.06.21",
+    "noticeDetailItems":[
+      {
+        "content":"약 수령 후 수령확인을 눌러주세요.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약제비 90,000원이 결제되었습니다.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약이 도착하면 복약지도에 맞춰 복용해 주세요.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      },
+      {
+        "content":"약제비 90,000원이 청구되었습니다. 5분 후 자동으로 약제비가 결제될 예정입니다.",
+        "createDetailNoticeDate":"2022.06.23 16:50"
+      }
+    ]
+  }
+]
