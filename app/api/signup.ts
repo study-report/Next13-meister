@@ -1,7 +1,6 @@
+import { User, getUsersDB } from '@/utils';
 import fs from 'fs';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { getUsersDB } from 'utils';
-import type { User } from 'utils/getUsersDB';
 
 const signUpHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {
