@@ -24,5 +24,5 @@ export async function POST(request: Request) {
     JSON.stringify([...parseUsersJSON, { id, password }], null, 4)
   );
 
-  return NextResponse.json("success signup", { status: 200 });
+  return NextResponse.json("회원가입에 성공했습니다.", { status: 200 });
 }

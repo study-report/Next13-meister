@@ -11,7 +11,7 @@ export async function POST(request: Request) {
   });
 
   if (findUserInfo) {
-    const token = jwt.sign({ email: findUserInfo.id }, "blue_ant", {
+    const token = jwt.sign({ email: findUserInfo.id }, "insert", {
       expiresIn: "1h",
     });
 
