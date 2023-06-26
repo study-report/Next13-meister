@@ -4,14 +4,14 @@ import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   const { id, password }: User = await request.json();
-  const parseUsersJSON = getUsersDB();
+  const parsedUserData = getUsersDB();
 
-  const findUserInfo = parseUsersJSON.find((user) => {
+  const findUserData = parsedUserData.find((user) => {
     return user.id === id && user.password === password;
   });
 
-  if (findUserInfo) {
-    const token = jwt.sign({ email: findUserInfo.id }, "insert", {
+  if (findUserData) {
+    const token = jwt.sign({ email: findUserData.id }, "insert", {
       expiresIn: "1h",
     });
 

@@ -9,9 +9,9 @@ export async function POST(request: Request) {
     return NextResponse.json("데이터가 부족합니다.", { status: 500 });
   }
 
-  const parseUsersJSON = getUsersDB();
+  const parsedUserData = getUsersDB();
 
-  const isAlreadyExists = parseUsersJSON.find((beforeUser) => {
+  const isAlreadyExists = parsedUserData.find((beforeUser) => {
     return beforeUser.id === id;
   });
 
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
   fs.writeFileSync(
     "public/no-edit/users.json",
-    JSON.stringify([...parseUsersJSON, { id, password }], null, 4)
+    JSON.stringify([...parsedUserData, { id, password }], null, 4)
   );
 
   return NextResponse.json("회원가입에 성공했습니다.", { status: 200 });
