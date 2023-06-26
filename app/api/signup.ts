@@ -1,16 +1,16 @@
-import { User, getUsersDB } from '@/utils';
-import fs from 'fs';
-import { NextApiRequest, NextApiResponse } from 'next';
+import { User, getUsersDB } from "@/insertcourse/utils";
+import fs from "fs";
+import { NextApiRequest, NextApiResponse } from "next";
 
 const signUpHandler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Only POST requests allowed' });
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Only POST requests allowed" });
   }
 
   const { id, password }: User = req.body;
 
   if (!id || !password) {
-    return res.status(400).json('Need More Parameters');
+    return res.status(400).json("Need More Parameters");
   }
 
   const parseUsersJSON = getUsersDB();
@@ -20,15 +20,15 @@ const signUpHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   if (isAlreadyExists) {
-    return res.status(500).json('That User Already Exists');
+    return res.status(500).json("That User Already Exists");
   }
 
   fs.writeFileSync(
-    'public/no-edit/users.json',
-    JSON.stringify([...parseUsersJSON, { id, password }], null, 4),
+    "public/no-edit/users.json",
+    JSON.stringify([...parseUsersJSON, { id, password }], null, 4)
   );
 
-  res.status(200).json('success signup');
+  res.status(200).json("success signup");
 };
 
 export default signUpHandler;

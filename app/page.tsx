@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>next.js 시작하기</main>;
+  return <div className="bg-red-800">next.js 시작하기</div>;
 }
