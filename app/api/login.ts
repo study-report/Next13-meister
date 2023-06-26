@@ -1,4 +1,4 @@
-import { User, getUsersDB } from "@/insertcourse/utils";
+import { User, getUsersDB } from "@/utils";
 import jwt from "jsonwebtoken";
 import { NextApiRequest, NextApiResponse } from "next";
 

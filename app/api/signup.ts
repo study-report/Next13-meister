@@ -1,4 +1,4 @@
-import { User, getUsersDB } from "@/insertcourse/utils";
+import { User, getUsersDB } from "@/utils";
 import fs from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
 
