@@ -6,8 +6,8 @@ export async function POST(request: Request) {
   const { id, password }: User = await request.json();
   const parsedUserData = getUsersDB();
 
-  const findUserData = parsedUserData.find((user) => {
-    return user.id === id && user.password === password;
+  const findUserData = parsedUserData.find((existUser) => {
+    return existUser.id === id && existUser.password === password;
   });
 
   if (findUserData) {

@@ -11,8 +11,8 @@ export async function POST(request: Request) {
 
   const parsedUserData = getUsersDB();
 
-  const isAlreadyExists = parsedUserData.find((beforeUser) => {
-    return beforeUser.id === id;
+  const isAlreadyExists = parsedUserData.find((existUser) => {
+    return existUser.id === id;
   });
 
   if (isAlreadyExists) {
